@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>GOOD MORNING USA!</h1>
+    <h1>Rocket League Goal Explosion Tier List</h1>
+    <h3>make a tier list</h3>
   </div>
 </template>
 
@@ -9,5 +10,10 @@
 </script>
 
 <style scoped>
-
+h1{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
 </style>
