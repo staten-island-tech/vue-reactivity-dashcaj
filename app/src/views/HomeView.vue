@@ -5,6 +5,8 @@
   <tiersection :word="word3"/>
   <tierbar :t="tee"/>
   <tierdata :tierdata="test" />
+
+  
 </template>
 
 <script setup>
@@ -12,6 +14,7 @@
   import tiersection from '@/components/tiersection.vue';
   import tierdata from '@/components/tierchart.vue'
   import tierbar from '@/components/tierbar.vue';
+  import buttons from '@/components/buttons.vue'
   const word1 = "word1"
   const word2 = "word2"
   const word3 = "word3"
