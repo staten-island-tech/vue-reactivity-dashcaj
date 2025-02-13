@@ -3,8 +3,7 @@
   <tiersection :word="word1"/>
   <tiersection :word="word2"/>
   <tiersection :word="word3"/>
-  <tierbar :t="tee"/>
-  <tierdata :tierdata="test" />
+  <buttons/>
 
   
 </template>
