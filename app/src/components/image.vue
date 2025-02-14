@@ -5,9 +5,9 @@
 
 <script>    
 import { ref } from 'vue';
-const listofimages = ref([1,2,3,4,5,6,7,8,9,1])
+export const listofimages = ref([1,2,3,4,5,6,7,8,9,1])
 
-function cycle() {
+export function cycle() {
     listofimages.value.shift()
 }
 </script>
