@@ -6,26 +6,35 @@
 <script>    
 import { ref } from 'vue';
 export const listofimages = ref([
-    '@/imgs/71PMJAJqUIL._AC_UF1000,1000_QL80_.jpg',
-    '@/imgs/81+jwWMXYrL._AC_UF350,350_QL80_.jpg',
-    '@/imgs/11619607_hi.jpg',
-    '@/imgs/download (1).jpg',
-    '@/imgs/download (2).jpg',
-    '@/imgs/download (3).jpg',
-    '@/imgs/download (4).jpg',
-    '@/imgs/download (5).jpg',
-    '@/imgs/download (6).jpg',
-    '@/imgs/download (7).jpg',
-    '@/imgs/download.jpg',
-    '@/imgs/download.png',
-    '@/imgs/mp-4510-1000px.webp',
-    '@/imgs/New-York-Nights__PRODUCT_01--IMG_ZOOM--NEWYORKNIGHTS-1875665158.png',
-    '@/imgs/tf_sku_T01K01_2000x2000_1.webp'
+    'https://creedboutique.com/cdn/shop/files/aventus-100ml-bottle_3413e5f4-3eee-40b3-8451-2546a370ec5b.jpg?v=1734710265&width=750',
+    'https://m.media-amazon.com/images/I/81+jwWMXYrL._AC_UF350,350_QL80_.jpg',
+    'https://cdn.media.amplience.net/s/hottopic/11619607_hi',
+    'https://m.media-amazon.com/images/I/71Vyjtw637L.jpg',
+    'https://www.sephora.com/productimages/product/p449122-av-1-zoom.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqrbsRN494h-XsthBSm5tGSQU2cxrZvpVZw&s',
+    'https://dimg.dillards.com/is/image/DillardsZoom/mainProduct/viktor--rolf-spicebomb-extreme-eau-de-parfum/05157632_zi.jpg',
+    'https://m.media-amazon.com/images/I/412TXqfY5jL.jpg',
+    'https://m.media-amazon.com/images/I/61YIgukdRgL.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpvXH5DclPCwH2SJoznEP8EWRuM-O8wOktZg&s',
+    'https://m.media-amazon.com/images/I/41FB87Tvl4L._AC_.jpg',
+    'https://m.media-amazon.com/images/I/61WTqMHzC3L.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQne8BOMqh-T1QKq1jDNmFIeqq8AbsviH_54g&s',
+    'https://media.maxaroma.com/9cd29e92-4b8f-436f-ad1f-8e368b30dc1d/https://www.maxaroma.com/productimages/large/UP888874007741.jpg?ver=1701625686',
+    'https://www.sephora.com/productimages/sku/s1449297-main-zoom.jpg'
 ])
 
-export const noimg = ref(false);
 
-// Function to cycle images
+
+
+
+
+
+
+
+
+/* export const noimg = ref(false);
+
+
 export function cycle() {
   if (listofimages.value.length === 0) {
     noimg.value = true;
@@ -33,5 +42,5 @@ export function cycle() {
   }
   const img1 = listofimages.value.shift();
   listofimages.value.push(img1);
-}
+} */
 </script>

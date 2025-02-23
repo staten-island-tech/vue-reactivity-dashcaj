@@ -1,31 +1,76 @@
 
 
 <script>
-import { defineProps } from 'vue';
-import { addtotier } from './function.vue';
+import { tierS, tierA, tierB, tierC, tierD, tierE, tierF } from "@/components/ALLTIERS.vue"
 
-const props = defineProps({
-  tier: {
-    type: Array,
-    required: true,
-  },
-  appendtotier: Function,
-  noimages: Boolean,
-  tiername: String
-});
+
+
+
+
+
+
 
 </script>
 
 <template>
-    <div class="tier-container">
-        <h3 class="tier-title">{{ tierName }} Tier</h3>
-        <div class="tier-bar">
-        <img v-for="item in props.tier" :key="item.id" :src="item.img" alt="Added Image" class="tier-image" />
-    </div>
 
-    <button @click="props.addToTier(props.tier)" :disabled="props.noMoreImages">
-      Add Image to {{ tierName }} Tier
-    </button>
-  </div>
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierS" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierA" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierB" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierC" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierD" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierE" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
+<div class="bar">
+  <div class="tier-bar">
+      <img class="img"v-for="(image, index) in tierF" :key="index" :src="image" alt="Tier Image"  />
+    </div>
+</div>
+
 
 </template>
+
+<style scoped>
+.tier-bar {
+  display: flex;
+  gap: 10px;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 60px;
+  align-items: center;
+}
+
+.img{
+  width: 100%;
+}
+</style>

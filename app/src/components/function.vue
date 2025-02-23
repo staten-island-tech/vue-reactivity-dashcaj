@@ -8,18 +8,21 @@
 </template>
 
 <script>    
-import { listofimages, cycle, noimg} from './image.vue';
-import { ref } from 'vue';
+/* import { listofimages, cycle, noimg} from './image.vue'; */
 
-export const tierS = ref([]);
-export const tierA = ref([]);
-export const tierB = ref([]);
-export const tierC = ref([]);
-export const tierD = ref([]);
-export const tierE = ref([]);
-export const tierF = ref([]);
 
-export function addtotier(tier) {
+
+
+
+
+
+
+
+
+
+
+
+/* export function addtotier(tier) {
   if (noimg.value) return;
 
   if (listofimages.value.length > 0) {
@@ -27,7 +30,7 @@ export function addtotier(tier) {
     tier.value.push(newItem);
     cycle(); // Cycle to the next image
   }
-}
+} */
 
 
 
