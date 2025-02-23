@@ -1,27 +1,26 @@
 <template>
-  <thetitle/>
-  <p v-if="listofimages.length">{{ "Image " + listofimages[0] }}</p>
-  <p v-if="!listofimages.length">no more images</p>
-  <div>
-    <button @click="cycle">s+</button>
-    <button @click="cycle">a</button>
-    <button @click="cycle">b</button>
-    <button @click="cycle">c</button>
-    <button @click="cycle">d</button>
-    <button @click="cycle">e</button>
-    <button @click="cycle">f</button>
+  <div class="parent-container">
+    <!-- Title component -->
+    <thetitle />
+
+    <!-- Tier components: Each gets the respective tier array, the addToTier function, and the noMoreImages flag -->
+    <tiers :tier="tierS" :addToTier="addtotier" :noMoreImages="noimg" tierName="S" />
+    <tiers :tier="tierA" :addToTier="addtotier" :noMoreImages="noimg" tierName="A" />
+    <tiers :tier="tierB" :addToTier="addtotier" :noMoreImages="noimg" tierName="B" />
+    <tiers :tier="tierC" :addToTier="addtotier" :noMoreImages="noimg" tierName="C" />
+    <tiers :tier="tierD" :addToTier="addtotier" :noMoreImages="noimg" tierName="D" />
+    <tiers :tier="tierE" :addToTier="addtotier" :noMoreImages="noimg" tierName="E" />
+    <tiers :tier="tierF" :addToTier="addtotier" :noMoreImages="noimg" tierName="F" />
   </div>
+
 
 </template>
 
 <script setup>
-  import thetitle from '@/components/thetitle.vue';
-  import tiersection from '@/components/tiersection.vue';
-  import tierdata from '@/components/tierchart.vue'
-  import {listofimages, cycle} from '@/components/image.vue'
-
-  import { defineProps } from 'vue';
-  const props = defineProps(["tierdata"])
+import { tierS, tierA, tierB, tierC, tierD, tierE, tierF, addtotier } from '@/components/function.vue';
+import { noimg } from '@/components/image.vue';
+import tiers from '@/components/tiersection.vue';
+import thetitle from '@/components/thetitle.vue';
 </script>
 
 <style scoped>
