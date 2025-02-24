@@ -3,44 +3,44 @@
 </template>
 
 <script>
-import { tierS, tierA, tierB, tierC, tierD, tierE, tierF } from "@/components/ALLTIERS.vue"
+import { tiers } from "@/components/ALLTIERS.vue"
 import { listofimages } from "./image.vue";
 
 
 
 export function cycleS() {
-    const firstimage = listofimages.value.shift()
-  tierS.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierS.push(firstimage)
 }
 
 export function cycleA() {
-    const firstimage = listofimages.value.shift()
-  tierA.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierA.push(firstimage)
 }
 
 export function cycleB() {
-    const firstimage = listofimages.value.shift()
-  tierB.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierB.push(firstimage)
 }
 
 export function cycleC() {
-    const firstimage = listofimages.value.shift()
-  tierC.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierC.push(firstimage)
 }
 
 export function cycleD() {
-    const firstimage = listofimages.value.shift()
-  tierD.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierD.push(firstimage)
 }
 
 export function cycleE() {
-    const firstimage = listofimages.value.shift()
-  tierE.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierE.push(firstimage)
 }
 
 export function cycleF() {
-    const firstimage = listofimages.value.shift()
-  tierF.value.push(firstimage)
+  const firstimage = listofimages.value.shift()
+  tiers.tierF.push(firstimage)
 }
 
 

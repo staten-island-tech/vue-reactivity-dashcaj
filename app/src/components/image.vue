@@ -5,7 +5,7 @@
 
 <script>    
 import { ref } from 'vue';
-export const listofimages = ref([
+export const originalimages = [
     'https://creedboutique.com/cdn/shop/files/aventus-100ml-bottle_3413e5f4-3eee-40b3-8451-2546a370ec5b.jpg?v=1734710265&width=750',
     'https://m.media-amazon.com/images/I/81+jwWMXYrL._AC_UF350,350_QL80_.jpg',
     'https://cdn.media.amplience.net/s/hottopic/11619607_hi',
@@ -21,9 +21,9 @@ export const listofimages = ref([
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQne8BOMqh-T1QKq1jDNmFIeqq8AbsviH_54g&s',
     'https://media.maxaroma.com/9cd29e92-4b8f-436f-ad1f-8e368b30dc1d/https://www.maxaroma.com/productimages/large/UP888874007741.jpg?ver=1701625686',
     'https://www.sephora.com/productimages/sku/s1449297-main-zoom.jpg'
-])
+]
 
-
+export const listofimages = ref([...originalimages]);
 
 
 

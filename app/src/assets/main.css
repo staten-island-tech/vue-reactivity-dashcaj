@@ -1,0 +1,25 @@
+html, * {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Reddit Sans Condensed", serif;
+    color: var(--font);
+}
+
+:root{
+    --1color: #f8f2e6;
+    --2color: #e1b39f;
+    --font: #2f3540; 
+    --S: #eb5579;
+    --A: #e8a339;
+    --B: #fce258;
+    --C: #3d9d51;
+    --D: #779ecb;
+    --E: #3d426b;
+    --F: #966fd6;
+}
+
+body{
+    background-color: var(--1color);
+}
